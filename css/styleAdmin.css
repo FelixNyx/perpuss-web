@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    z-index: 1000;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #0A5EB0;
+    color: white;
+    padding-top: 20px;
+    transition: width 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+/* Sidebar minimal */
+.sidebar.minimized {
+    width: 80px;
+}
+.sidebar a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+.sidebar a:hover {
+    background-color: #0A5EB0;
+}
+.sidebar .nav-item {
+    margin-bottom: 20px;
+}
+.sidebar .nav-item .bi {
+    margin-right: 10px;
+}
+.sidebar .profile {
+    text-align: center;
+    margin-bottom: 30px;
+    transition: opacity 0.3s ease;
+}
+.sidebar .profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.sidebar .profile .username {
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.sidebar .dropdown-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #0A5EB0;
+    color: white;
+    border: none;
+}
+.sidebar .dropdown-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.sidebar .dropdown-menu a:hover {
+    background-color: #0A5EB0;
+}
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+.main-content.sidebar-minimized {
+    margin-left: 80px;
+}
+.toggle-btn {
+    position: absolute;
+    top: 20px;
+    right: -10px;
+    background-color: #0A5EB0;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+/* Sidebar content when minimized */
+.sidebar.minimized .nav-item {
+    display: none;
+}
+.sidebar.minimized .profile img {
+    width: 40px;
+    height: 40px;
+}
+.sidebar.minimized .profile .username {
+    display: none;
+}
+.sidebar.minimized .profile,
+.sidebar.minimized .logout-btn {
+    opacity: 0; /* Hide profile and logout button when minimized */
+    pointer-events: none; /* Prevent interaction when minimized */
+}
+/* Logout button at the bottom */
+.sidebar .logout-btn {
+    margin-top: auto;
+    padding: 45px;
+    text-align: center;
+}
+
+/* Menambahkan margin pada profil agar lebih kebawah */
+.profile {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;  /* Menambahkan margin-top untuk mengatur posisi lebih ke bawah */
+}
+
+.profile i {
+    font-size: 40px;  /* Menyesuaikan ukuran icon */
+}
+
+.profile .username {
+    font-size: 14px;
+    margin-top: 10px;
+}

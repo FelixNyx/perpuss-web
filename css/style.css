@@ -1,0 +1,60 @@
+/* Adjust the height of the carousel images */
+.carousel-inner img {
+    height: 400px; /* Set a fixed height for the images */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+}
+
+/* Optional: Adjust the carousel container */
+.carousel {
+    max-width: 800px; /* Set a maximum width for the carousel */
+    margin: auto; /* Center the carousel */
+    padding-top: 30px;
+}
+
+/* Container for the card layout */
+.container {
+    max-width: 1200px; /* Batas lebar kontainer */
+    padding: 20px; /* Padding untuk margin dalam */
+    background-color: #B1F0F7; /* Warna latar belakang */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+.card {
+    width: 100%; /* Lebar kartu sesuai kolom */
+    height: auto; /* Kartu menyesuaikan konten */
+    border: none; /* Hilangkan border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan ringan */
+    border-radius: 8px; /* Sudut kartu membulat */
+    overflow: hidden; /* Pastikan konten tidak keluar */
+}
+
+.card-img-top {
+    height: 400px; /* Tinggi gambar seragam */
+    width: 100%; /* Lebar penuh kartu */
+    object-fit: cover; /* Gambar dipotong jika tidak sesuai */
+    border-bottom: 2px solid #ddd; /* Garis bawah untuk gambar */
+}
+
+.card-body {
+    padding: 15px; /* Padding konten kartu */
+    text-align: center; /* Pusatkan teks */
+    background-color: #f9f9f9; /* Warna latar belakang konten */
+    border-radius: 0 0 8px 8px; /* Sudut membulat untuk bagian bawah */
+}
+
+.card-title {
+    font-size: 16px; /* Ukuran judul */
+    font-weight: bold; /* Huruf tebal */
+    margin-bottom: 10px; /* Jarak bawah */
+}
+
+.card-text {
+    font-size: 14px; /* Ukuran teks deskripsi */
+    margin-bottom: 10px; /* Jarak bawah */
+}
+
+.btn-primary {
+    font-size: 14px; /* Ukuran font tombol */
+    padding: 5px 10px; /* Ukuran tombol */
+}
